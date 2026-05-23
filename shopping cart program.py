@@ -1,5 +1,5 @@
 #shopping cart program
-
+print("Welcome to the shopping cart program!")
 cart = []
 prices = []
 total=0
