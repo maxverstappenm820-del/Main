@@ -42,3 +42,4 @@ elif computer_score > player_score:
     print("Computer wins the game! Better luck next time!")
 else:
     print("The game is a tie!")
+print("-------------------------------------------------")
