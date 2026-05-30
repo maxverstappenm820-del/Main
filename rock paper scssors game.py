@@ -33,6 +33,7 @@ while is_running:
     elif (player_choice == "rock" and computer_choice == "paper") or (player_choice == "paper" and computer_choice == "scissors") or (player_choice == "scissors" and computer_choice == "rock"):
         print("Computer wins!")
         computer_score += 1
+ 
     print(f"Score: You {player_score} - Computer {computer_score}")
 if player_score > computer_score:
     print("Congratulations! You won the game!")
