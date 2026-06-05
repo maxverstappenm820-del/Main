@@ -6,6 +6,11 @@ import datetime
 def set_alarm(alarm_time):
     print("Alarm set for", alarm_time)
     is_running = True
+    try:
+        datetime.datetime.strptime(alarm_time, "%H:%M:%S")
+    except ValueError:
+        print("Invalid time format. Please use HH:MM:SS (24-hour).")
+        return
 
     while is_running:
         current_time = datetime.datetime.now().strftime("%H:%M:%S")
